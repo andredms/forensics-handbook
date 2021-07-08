@@ -50,16 +50,16 @@ Deleted files that have been recovered are notated with an asterisk (```*```).
 
 We can build a timeline analysis of our copied image. 
 
-Prime the data: ```fls -m / -rp -f fat32 ok.dd > usb.fls```
-Convert the file from previous command: ```cat usb.fls > usb.mac```
-Make human readable: ```mactime -b usb.msc > usb.mactime```
-Read the file: ```cat usb.mactime```
+Prime the data: ```fls -m / -rp -f fat32 ok.dd > usb.fls```\
+Convert the file from previous command: ```cat usb.fls > usb.mac```\
+Make human readable: ```mactime -b usb.msc > usb.mactime```\
+Read the file: ```cat usb.mactime```\
 
 ## Tools
-[usbrip](https://github.com/snovvcrash/usbrip)
-[Foremost](https://linux.die.net/man/1/foremost)
-[Autopsy](https://www.sleuthkit.org/autopsy/)
-[FTK Imager](https://www.exterro.com/ftk-imager)
+[usbrip](https://github.com/snovvcrash/usbrip)\
+[Foremost](https://linux.die.net/man/1/foremost)\
+[Autopsy](https://www.sleuthkit.org/autopsy/)\
+[FTK Imager](https://www.exterro.com/ftk-imager)\
 
 ## CDs
 
