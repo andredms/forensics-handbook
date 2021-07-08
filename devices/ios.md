@@ -13,8 +13,8 @@ iOS devices contain two partitions - the firmware and user data partition. The f
 
 If an iOS device is not physically available, it is possible to retrieve the latest back up through a workstation (such as a laptop or desktop) that the device previously connected to. iTunes performs an automatic backup during the syncing process or whenever an upgrade is performed. These backups can be found in the following locations:
 
-* Windows 7 - 11: %systempartition%\Users\%username%\AppData\Roaming\Apple Computer\MobileSnc\Backup
-* macOS: Users/%username%/Library/Application Support/MobileSync/Backup
+* Windows 7 - 11: ```%systempartition%\Users\%username%\AppData\Roaming\Apple Computer\MobileSnc\Backup```
+* macOS: ```Users/%username%/Library/Application Support/MobileSync/Backup```
 
 Multiple files are contained within the above directories:
 
