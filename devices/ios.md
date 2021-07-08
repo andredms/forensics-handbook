@@ -1,5 +1,5 @@
 # iOS Devices
-Much like USBs, mobile phones are extremely portable and contain a treasure trove of information. Unlike Linux and Windows, Apple uses HFS+ (or more recently APFS). 
+Much like USBs, mobile phones are extremely portable and contain a treasure trove of information. Unlike Linux and Windows, Apple uses the HFS+ file system (or more recently APFS). 
 
 Passcode locked devices are a challenge as a passocde is required in order to acquire data. When performing a forensics investigation on an iOS device, 'airplane mode' should be used in order to prevent a third party from remotely accessing the device and tampering with it. 
 
