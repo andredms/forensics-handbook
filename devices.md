@@ -17,9 +17,9 @@ USBs (Universal Serial Bus) are small storage devices that can store malicious p
 
 List drives: ```sudo fdisk -l```\
 Create copy: ```sudo dd if=/dev/sdc1 of usb.dd bs=512 count=1```\
-* if: the location of the USB drive.\
-* * of: destination of copied image\
-* bs: number of bytes copied at a time\
+   * if: the location of the USB drive.\
+   * of: destination of copied image\
+   * bs: number of bytes copied at a time\
 
 ### [2] Create hash
 In order to prove that we have the unaltered copy of the device, we'll create a hash - if even one bit changes the hash will change.\
