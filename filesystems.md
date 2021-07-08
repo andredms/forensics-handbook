@@ -2,7 +2,7 @@
 
 A file system dictates how data is stored and retrieved on a device. If no file system is used, data would be placed in one large block with no way to tell apart two seperate pieces of information. Through using a file system, data can be easily isolated and identified in what are known as 'files'. 
 
-The type of file system a device uses can greatly vary. This guide will cover the most relevant ones.
+File systems vary from device to device - this guide will cover the most relevant ones.
 
 ## NTFS (Windows)
 
