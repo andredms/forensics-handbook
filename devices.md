@@ -13,7 +13,7 @@ USBs (Universal Serial Bus) are small storage devices that can store malicious p
 2gb - 128gb
 
 ## Recovering data
-[1] Create a copy
+### [1] Create a copy
 
 List drives: ```sudo fdisk -l```
 Create copy: ```sudo dd if=/dev/sdc1 of usb.dd bs=512 count=1```
@@ -21,12 +21,12 @@ Create copy: ```sudo dd if=/dev/sdc1 of usb.dd bs=512 count=1```
              of: destination of copied image
              bs: number of bytes copied at a time
 
-[2] Create hash
+### [2] Create hash
 In order to prove that we have the unaltered copy of the device, we'll create a hash - if even one bit changes the hash will change.
 
 Generate hash: ```md5sum usb.dd```
 
-[3] Metadata
+### [3] Metadata
 
 
 ## Tools
