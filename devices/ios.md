@@ -13,14 +13,14 @@ iOS devices contain two partitions - the firmware and user data partition. The f
 
 If an iOS device is not physically available, it is possible to retrieve the latest back up through a workstation (such as a laptop or desktop) that the device previously connected to. iTunes performs an automatic backup during the syncing process or whenever an upgrade is performed. These backups can be found in the following locations:
 
-* Windows 7 - 11: %systempartition%\Users\%username%\AppData\Roaming\Apple Computer\MobileSnc\Backup\
-* macOS: Users/%username%/Library/Application Support/MobileSync/Backup\
+* Windows 7 - 11: %systempartition%\Users\%username%\AppData\Roaming\Apple Computer\MobileSnc\Backup
+* macOS: Users/%username%/Library/Application Support/MobileSync/Backup
 
 Multiple files are contained within the above directories:
 
-* Status.plist provides information about the latest backup.\
-* Info.plist contains information that can be used to confirm the backup matches the device.\
-* IMEI number (a unique 15-digit number every mobile device has).\
+* Status.plist provides information about the latest backup.
+* Info.plist contains information that can be used to confirm the backup matches the device.
+* IMEI number (a unique 15-digit number every mobile device has).
 * Phone number.
 
 The file names within are convereted to a SHA1 string of the original name. Files ending with *.mddata and *.mdinfo are the most interesting as they contain user data. 
@@ -35,8 +35,8 @@ The most popular approach today is to use the logical acquisition method - where
 
 Tools can be used to extract an image of an iOS device if it is physically available:
 
-* (Lantern 2([http://www.mobileforensicscentral.com/mfc/products/lantern.asp?pg=d&prid=387&pid=]) is able to extract data from any iOS device running any version.\
-* (iXAM)[https://wikileaks.org/spyfiles/docs/FORENSICTELECOMMUNICATIONS-2011-iXAMZeroFore-en.pdf] has the ability to retrieve all different types of data - potentially even all voicemails recieved over the lifetime of a handset. Other information such as GPS locations, bluteooth pairings, wireless network details, internet history, text messages and content downloads can also be recovered.\
+* (Lantern 2)[http://www.mobileforensicscentral.com/mfc/products/lantern.asp?pg=d&prid=387&pid=]) is able to extract data from any iOS device running any version.
+* (iXAM)[https://wikileaks.org/spyfiles/docs/FORENSICTELECOMMUNICATIONS-2011-iXAMZeroFore-en.pdf] has the ability to retrieve all different types of data - potentially even all voicemails recieved over the lifetime of a handset. Other information such as GPS locations, bluteooth pairings, wireless network details, internet history, text messages and content downloads can also be recovered.
 
 ### Jailbreaking 
 
@@ -44,7 +44,7 @@ If none of the above methods work, one can jailbreak a device to replace the fir
 
 Once jailbroken (using a tool such as redSn0w), a forensic workstation is typically setup on the same wireless network as the iOS device and the following command can be run to extract an image:
 
-```ssh root@172.16.103.106 dd if=/dev/rdisk0 bs=1M | dd of=ios-root.img```\
+```ssh root@172.16.103.106 dd if=/dev/rdisk0 bs=1M | dd of=ios-root.img```
 
 Unfortunately, this image is encrypted and one must obtain the password from the device owner in order to decrypt it. 
 
@@ -57,15 +57,15 @@ Default applications (such as Contacts) store their data in ```private/var/mobil
 
 ### Downloaded Applications 
 
-```private/var/mobile/Applications```\
+```private/var/mobile/Applications```
 
 When an application is downloaded, a new directory is created within the ```mobile/Application``` folder. info.plist is included in all application directories and application specific usernames, passwords, cookies and images can also be found here.
 
 ### Images
 
-```private/var/mobile/media/DCIM```\
+```private/var/mobile/media/DCIM```
 
-Images are located within ```private/var/mobile/media/DCIM```. Photos within the ```100APPLE`` directory indiciate that the photo was taken on the device itself - sequential numbering is used to show the order in which the photos were taken, e.g. IMG_0001. If there is a number missing in the sequence of photo files, one can assume that the photo was deleted. 
+Images are located within ```private/var/mobile/media/DCIM```. Photos within the ```100APPLE``` directory indiciate that the photo was taken on the device itself - sequential numbering is used to show the order in which the photos were taken, e.g. IMG_0001. If there is a number missing in the sequence of photo files, one can assume that the photo was deleted. 
 
 Screenshots are located within the ```999Apple``` folder - if an illegal application was used, any screenshots that the user took of it may be here if they have not deleted them.
 
@@ -89,9 +89,9 @@ Voicemail, wireless access point and device login passwords can be found within 
 
 Data from the default Notes application can be found within ```notes.sqlite``` - the table 'ZNote' contains multiple columns that may be of interest:
 
-* CREATIONDATE\
-* MODIFICATIONDATE\
-* ZTITLE\
+* CREATIONDATE
+* MODIFICATIONDATE
+* ZTITLE
 
 The 'ZNOTEBODY' table contains the contents of the note in the 'ZCONTENT' column.
 
@@ -101,8 +101,8 @@ The 'ZNOTEBODY' table contains the contents of the note in the 'ZCONTENT' column
   
 Text messages are located within the ```sms.db``` - this houses both existing and deleted conversations. The tables 'message' and 'msq_pieces' will contain the most interesting information. The message table contains a row for each message - each row contains the following information:
 
-* Recieving phone number.\
-* Message body.\
+* Recieving phone number.
+* Message body.
 * 'flags' which tell if the message was sent (3) or recieved (2).
 * 'read' which tells if the message was read (1).
 
@@ -142,4 +142,4 @@ Applications such as Camera often store the longitude and latitude of where a ph
 [Scalpel](https://github.com/sleuthkit/scalpel)
 [Paraben Device Seizure](https://paraben.com/paraben-for-mobile-forensics/)\
 [EnCase](https://security.opentext.com/encase-mobile-investigator)
-[Mobile Sync Browser](http://mobilesyncbrowser.com/)\
+[Mobile Sync Browser](http://mobilesyncbrowser.com/)
