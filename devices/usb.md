@@ -52,20 +52,3 @@ Read the file: ```cat usb.mactime```
 [Foremost](https://linux.die.net/man/1/foremost)\
 [Autopsy](https://www.sleuthkit.org/autopsy/)\
 [FTK Imager](https://www.exterro.com/ftk-imager)
-
-# iOS Devices
-Much like USBs, mobile phones are extremely portable and contain a treasure trove of information. Unlike Linux and Windows machines which uses NFTS , Apple uses 
-
-# Desktops
-
-# Laptops
-
-# Smart Phones
-
-# Tablets
-
-## CDs
-
-## Memory Cards
-
-## 
