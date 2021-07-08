@@ -59,7 +59,7 @@ Read the file: ```cat usb.mactime```\
 [usbrip](https://github.com/snovvcrash/usbrip)\
 [Foremost](https://linux.die.net/man/1/foremost)\
 [Autopsy](https://www.sleuthkit.org/autopsy/)\
-[FTK Imager](https://www.exterro.com/ftk-imager)\
+[FTK Imager](https://www.exterro.com/ftk-imager)
 
 ## CDs
 
