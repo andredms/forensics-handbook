@@ -15,5 +15,10 @@ This is particuarly handy in regards to incideint response, as malicious files c
 
 Foremost can be used to scan for deleted files by providing it with a source (such as a partition or .dd file - like the one generated in [devices.md](devices.md) for USBs). 
 
+```sudo foremost -i /dev/sdb1```
 
+This creates a folder called ```output``` which contains a subdirectory for each file type we're attempting to achieve (e.g. exe would have a folder within output). 
 
+If we want to narrow down our search (e.g we only want to find .exe and .zip files) we can use the following flag:
+
+```sudo foremost -t exe, zip -i /dev/sdb1```
