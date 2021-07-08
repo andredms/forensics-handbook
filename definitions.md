@@ -11,7 +11,7 @@ A structured way to organise data. Mobile devices often use SQLite - for example
 
 ### Plist 
 
-A plist (property list) is a data file that stores information on iOS and OSX operating systems. A plsit can store strings, dates, boolean values, numbers and binary values. Browsing history, favourites and configuration data can be stored in a plist. (Plutil)[https://www.unix.com/man-page/osx/1/plutil/] can be used to convert binary plist files into a human readable format. 
+A plist (property list) is a data file that stores information on iOS and OSX operating systems. A plsit can store strings, dates, boolean values, numbers and binary values. Browsing history, favourites and configuration data can be stored in a plist. [Plutil](https://www.unix.com/man-page/osx/1/plutil/) can be used to convert binary plist files into a human readable format. 
 
 ### Slack Space
 
