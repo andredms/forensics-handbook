@@ -29,14 +29,14 @@ The file names within are convereted to a SHA1 string of the original name. File
 
 The most popular approach today is to use the logical acquisition method - where one recovers the active files on an iOS device using a syncrhonisation method built into iOS. In doing so, one can gather SMS texts, call logs, calendar events, contacts, photos, web history and e-mail accounts. 
 
-(iExplorer)[https://macroplant.com/iexplorer] can be used in order to quickly export call history, texts, photos, contacts and bookmarks. Information such as date modified is avaiable and it's even possible to recover data from after a factory reset. 
+[iExplorer](https://macroplant.com/iexplorer) can be used in order to quickly export call history, texts, photos, contacts and bookmarks. Information such as date modified is avaiable and it's even possible to recover data from after a factory reset. 
 
 ### Physical Methods
 
 Tools can be used to extract an image of an iOS device if it is physically available:
 
-* (Lantern 2)[http://www.mobileforensicscentral.com/mfc/products/lantern.asp?pg=d&prid=387&pid=]) is able to extract data from any iOS device running any version.
-* (iXAM)[https://wikileaks.org/spyfiles/docs/FORENSICTELECOMMUNICATIONS-2011-iXAMZeroFore-en.pdf] has the ability to retrieve all different types of data - potentially even all voicemails recieved over the lifetime of a handset. Other information such as GPS locations, bluteooth pairings, wireless network details, internet history, text messages and content downloads can also be recovered.
+* [Lantern 2](http://www.mobileforensicscentral.com/mfc/products/lantern.asp?pg=d&prid=387&pid=]) is able to extract data from any iOS device running any version.
+* [iXAM](https://wikileaks.org/spyfiles/docs/FORENSICTELECOMMUNICATIONS-2011-iXAMZeroFore-en.pdf) has the ability to retrieve all different types of data - potentially even all voicemails recieved over the lifetime of a handset. Other information such as GPS locations, bluteooth pairings, wireless network details, internet history, text messages and content downloads can also be recovered.
 
 ### Jailbreaking 
 
@@ -81,7 +81,7 @@ A list of all words typed by the user throughout the lifetime of a device can be
 
 Many iOS applications use Apple's keychain for password management. The ```key-chain-2.db``` file contains various tables such as cert, genp, inet and keys that may have account names and passwords a device has used. 
 
-Voicemail, wireless access point and device login passwords can be found within this database. In most cases, the passwords will be encrypted by the (iOS encryption keychain procedure)[https://support.apple.com/en-au/guide/security/secb0694df1a/web]. 
+Voicemail, wireless access point and device login passwords can be found within this database. In most cases, the passwords will be encrypted by the [iOS encryption keychain procedure](https://support.apple.com/en-au/guide/security/secb0694df1a/web). 
 
 ### Notes
 
@@ -136,7 +136,7 @@ The call history of an iOS device is located within ```call_history.db```. The '
 
 ```/private/var/Library/Caches/locationd```
 
-Applications such as Camera often store the longitude and latitude of where a photo was taken. The ```consolidated.db``` file contains geolocation data for every cell tower the iOS device utilises. Tools such as (iPhone Tracker)[peterwarden.github.com/iPhoneTracker] pull the aforementioned file and provide a graphical display of where the iOS device has been. 
+Applications such as Camera often store the longitude and latitude of where a photo was taken. The ```consolidated.db``` file contains geolocation data for every cell tower the iOS device utilises. Tools such as [iPhone Tracker](peterwarden.github.com/iPhoneTracker) pull the aforementioned file and provide a graphical display of where the iOS device has been. 
 
 ## Tools
 [Scalpel](https://github.com/sleuthkit/scalpel)
