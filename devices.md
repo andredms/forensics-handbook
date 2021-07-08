@@ -1,11 +1,3 @@
-# Desktops
-
-# Laptops
-
-# Smart Phones
-
-# Tablets
-
 # USBs
 USBs (Universal Serial Bus) are small storage devices that can store malicious programs and malware such as packet sniffers and key loggers. USB forensics can be used to recover deleted data in the event of an incident. There are many creative ways in which they can be [disguised](https://www.hongkiat.com/blog/weird-and-unusual-usb-products/).
 
@@ -60,6 +52,17 @@ Read the file: ```cat usb.mactime```
 [Foremost](https://linux.die.net/man/1/foremost)\
 [Autopsy](https://www.sleuthkit.org/autopsy/)\
 [FTK Imager](https://www.exterro.com/ftk-imager)
+
+# iOS Devices
+Much like USBs, mobile phones are extremely portable and contain a treasure trove of information. Unlike Linux and Windows machines which uses NFTS , Apple uses 
+
+# Desktops
+
+# Laptops
+
+# Smart Phones
+
+# Tablets
 
 ## CDs
 
