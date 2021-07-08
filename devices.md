@@ -24,9 +24,15 @@ Create copy: ```sudo dd if=/dev/sdc1 of usb.dd bs=512 count=1```
 ### [2] Create hash
 In order to prove that we have the unaltered copy of the device, we'll create a hash - if even one bit changes the hash will change.\
 
-Generate hash: ```md5sum usb.dd```]
+Generate hash: ```md5sum usb.dd```
 
 ### [3] Metadata
+
+We can look into more specific image about the copied USB device. 
+
+File system and drive geometry: ```file usb.dd```
+NTFS boot sector information: ```minfo -i usb.dd```
+
 
 
 ## Tools
