@@ -53,6 +53,10 @@ Unfortunately, this image is encrypted and one must obtain the password from the
 * [3] Open terminal and type: ```cd /checkra1n.app/Contents/MacOS/``` and ```./checkra1n_gui -```\
 * [4] ```sudo iproxy <local_port> 44```\
 * [5] Download directories (listed below): ```sshpass -p alpine scp -P <Local_Port> -rp root@localhost:/path_to_folder /path_to_folder```
+
+Here's a list of interesting files:
+
+![](https://i.imgur.com/B9xkB1B.png)
   
 ## Evidence 
 
