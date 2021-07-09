@@ -46,8 +46,14 @@ Once jailbroken (using a tool such as redSn0w), a forensic workstation is typica
 
 ```ssh root@172.16.103.106 dd if=/dev/rdisk0 bs=1M | dd of=ios-root.img```
 
-Unfortunately, this image is encrypted and one must obtain the password from the device owner in order to decrypt it. 
+Unfortunately, this image is encrypted and one must obtain the password from the device owner in order to decrypt it. Currently, [checkra1n](https://checkra.in/) can be used to bypass such restrictions. checkra1n can be installed on a locked device in BFU mode with an unknown password to then extract information through the [checkm8](https://checkm8.info/) vulnerability. 
 
+* [1] Install latest release of checkra1n\
+* [2] Connect the device and put it in [DFU mode](https://www.theiphonewiki.com/wiki/DFU_Mode)\
+* [3] Open terminal and type: ```cd /checkra1n.app/Contents/MacOS/``` and ```./checkra1n_gui -```\
+* [4] ```sudo iproxy <local_port> 44```\
+* [5] Download directories (listed below): ```sshpass -p alpine scp -P <Local_Port> -rp root@localhost:/path_to_folder /path_to_folder```
+  
 ## Evidence 
 
 An iOS device will contain many SQLite and plist files that can be used to build up a case. The directory structure of all iOS devices resembles that of a UNIX system. Many files are stored in .txt format, others are in SQLite databse, XML or binary format. 
