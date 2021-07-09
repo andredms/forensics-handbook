@@ -48,10 +48,10 @@ Once jailbroken (using a tool such as redSn0w), a forensic workstation is typica
 
 Unfortunately, this image is encrypted and one must obtain the password from the device owner in order to decrypt it. Currently, [checkra1n](https://checkra.in/) can be used to bypass such restrictions. checkra1n can be installed on a locked device in BFU mode with an unknown password to then extract information through the [checkm8](https://checkm8.info/) vulnerability. 
 
-* [1] Install latest release of checkra1n\
-* [2] Connect the device and put it in [DFU mode](https://www.theiphonewiki.com/wiki/DFU_Mode)\
-* [3] Open terminal and type: ```cd /checkra1n.app/Contents/MacOS/``` and ```./checkra1n_gui -```\
-* [4] ```sudo iproxy <local_port> 44```\
+* [1] Install latest release of checkra1n
+* [2] Connect the device and put it in [DFU mode](https://www.theiphonewiki.com/wiki/DFU_Mode)
+* [3] Open terminal and type: ```cd /checkra1n.app/Contents/MacOS/``` and ```./checkra1n_gui -```
+* [4] ```sudo iproxy <local_port> 44```
 * [5] Download directories (listed below): ```sshpass -p alpine scp -P <Local_Port> -rp root@localhost:/path_to_folder /path_to_folder```
 
 Here's a list of interesting files:
